@@ -13,6 +13,7 @@
 		BF352CB922053ECC00D774AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF352CB822053ECC00D774AA /* Assets.xcassets */; };
 		BF352CBC22053ECC00D774AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF352CBA22053ECC00D774AA /* LaunchScreen.storyboard */; };
 		BF352CC422060C0600D774AA /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF352CC322060C0600D774AA /* PageViewController.swift */; };
+		BFA6CCBB22067736005CEC5D /* MonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6CCBA22067736005CEC5D /* MonthlyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BF352CBB22053ECC00D774AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF352CBD22053ECC00D774AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF352CC322060C0600D774AA /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		BFA6CCBA22067736005CEC5D /* MonthlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BF352CB322053ECB00D774AA /* ViewController.swift */,
 				BF352CC322060C0600D774AA /* PageViewController.swift */,
 				BF352CB522053ECB00D774AA /* Main.storyboard */,
+				BFA6CCBA22067736005CEC5D /* MonthlyViewController.swift */,
 				BF352CB822053ECC00D774AA /* Assets.xcassets */,
 				BF352CBA22053ECC00D774AA /* LaunchScreen.storyboard */,
 				BF352CBD22053ECC00D774AA /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA6CCBB22067736005CEC5D /* MonthlyViewController.swift in Sources */,
 				BF352CC422060C0600D774AA /* PageViewController.swift in Sources */,
 				BF352CB422053ECB00D774AA /* ViewController.swift in Sources */,
 				BF352CB222053ECB00D774AA /* AppDelegate.swift in Sources */,

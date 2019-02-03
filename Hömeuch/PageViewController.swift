@@ -1,15 +1,24 @@
 import UIKit
 
+public var monthlyIncome = 0.0 {
+    didSet {
+        print(monthlyIncome)
+    }
+}
+
+
+
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-    
    
+    
     lazy var pageViewControllers: [UIViewController] = {
-        return [self.newVC(viewController: "first"), self.newVC(viewController: "second"), self.newVC(viewController: "third"), self.newVC(viewController: "fourth")]
+        return [self.newVC(viewController: "first"), self.newVC(viewController: "second"), self.newVC(viewController: "third"), self.newVC(viewController: "results")]
     }()
     
     func newVC(viewController: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
