@@ -18,7 +18,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVV-FY-UoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="-561"/>
+            <point key="canvasLocation" x="2818.840579710145" y="-561.68478260869574"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="box-zi-RaA">
@@ -27,14 +27,47 @@
                     <view key="view" contentMode="scaleToFill" id="VqD-2i-xaR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="oom-nK-sXG">
+                                <rect key="frame" x="108" y="129" width="180" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAI-Lv-mhA">
+                                <rect key="frame" x="20" y="318" width="374" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hömeuch targets the question regarding one of the most important investments an individual may make in their lifetime: How much can I comfortably afford if I wish to purchase a home? </string>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hömeuch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-0Y-g55">
+                                <rect key="frame" x="20" y="47" width="374" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rz8-vG-YSX">
+                                <rect key="frame" x="20" y="472" width="374" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">By providing 3 simple values: monthly income, monthly debts and available funds for a down-payment, Hömeuch will factor into account local interest rates, tax average, insurance, &amp; term length to estimate how much you could afford if purchasing a home.</string>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iMT-hS-C9f"/>
                     </view>
                     <navigationItem key="navigationItem" id="rBd-gG-OrL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0v-sW-ptJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2569.5652173913045" y="-561.68478260869574"/>
+            <point key="canvasLocation" x="3476.811594202899" y="-561.68478260869574"/>
         </scene>
         <!--Monthly View Controller-->
         <scene sceneID="qLY-VM-nXh">
@@ -58,6 +91,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldPrimaryActionTriggered:" destination="7n3-HR-TQN" eventType="primaryActionTriggered" id="NaJ-p1-dRO"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0T-Oj-H3o">
                                 <rect key="frame" x="139" y="567" width="97" height="30"/>
@@ -67,13 +103,6 @@
                                     <action selector="buttonTapped:" destination="f8S-2E-oTD" eventType="touchUpInside" id="M9q-uS-HqA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQz-0Y-g55">
-                                <rect key="frame" x="79" y="93" width="245" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzc-ef-1Vj">
                                 <rect key="frame" x="16" y="162" width="343" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -88,8 +117,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcU-Hh-Dfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7n3-HR-TQN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3232" y="-561"/>
+            <point key="canvasLocation" x="4139.130434782609" y="-561.68478260869574"/>
         </scene>
         <!--Down Payment View Controller-->
         <scene sceneID="ZT6-Fk-WDT">
@@ -137,12 +167,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDw-NT-Zak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3961" y="-562"/>
+            <point key="canvasLocation" x="4868.115942028986" y="-562.5"/>
         </scene>
         <!--Monthly Debt View Controller-->
         <scene sceneID="KD6-Wm-lAR">
             <objects>
-                <viewController id="Q9A-W6-XPK" customClass="MonthlyDebtViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fourth" id="Q9A-W6-XPK" customClass="MonthlyDebtViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAN-MS-3Nh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70M-Ds-0sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4596" y="-560"/>
+            <point key="canvasLocation" x="5502.898550724638" y="-560.054347826087"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="hGq-jO-Ggb">
@@ -176,7 +206,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuE-9T-RM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5232" y="-562"/>
+            <point key="canvasLocation" x="6139.130434782609" y="-562.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home" width="728" height="473"/>
+    </resources>
 </document>
