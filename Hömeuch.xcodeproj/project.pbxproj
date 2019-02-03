@@ -17,6 +17,7 @@
 		BFA6CCBD22069D21005CEC5D /* DownPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6CCBC22069D21005CEC5D /* DownPaymentViewController.swift */; };
 		BFA6CCBF22069E45005CEC5D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6CCBE22069E45005CEC5D /* ResultsViewController.swift */; };
 		BFA6CCC122069E61005CEC5D /* MonthlyDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6CCC022069E61005CEC5D /* MonthlyDebtViewController.swift */; };
+		BFA6CCC32206CD75005CEC5D /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6CCC22206CD75005CEC5D /* ModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BFA6CCBC22069D21005CEC5D /* DownPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPaymentViewController.swift; sourceTree = "<group>"; };
 		BFA6CCBE22069E45005CEC5D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		BFA6CCC022069E61005CEC5D /* MonthlyDebtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyDebtViewController.swift; sourceTree = "<group>"; };
+		BFA6CCC22206CD75005CEC5D /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BF352CB122053ECB00D774AA /* AppDelegate.swift */,
 				BF352CB322053ECB00D774AA /* ViewController.swift */,
 				BF352CC322060C0600D774AA /* PageViewController.swift */,
+				BFA6CCC22206CD75005CEC5D /* ModelController.swift */,
 				BFA6CCBC22069D21005CEC5D /* DownPaymentViewController.swift */,
 				BF352CB522053ECB00D774AA /* Main.storyboard */,
 				BFA6CCC022069E61005CEC5D /* MonthlyDebtViewController.swift */,
@@ -156,6 +159,7 @@
 				BF352CC422060C0600D774AA /* PageViewController.swift in Sources */,
 				BF352CB422053ECB00D774AA /* ViewController.swift in Sources */,
 				BF352CB222053ECB00D774AA /* AppDelegate.swift in Sources */,
+				BFA6CCC32206CD75005CEC5D /* ModelController.swift in Sources */,
 				BFA6CCBF22069E45005CEC5D /* ResultsViewController.swift in Sources */,
 				BFA6CCC122069E61005CEC5D /* MonthlyDebtViewController.swift in Sources */,
 			);

@@ -28,12 +28,12 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
     func calculate () {
         
-        var interestRate: Double = 5.0
-        var taxesAverage: Double = 4000.0
-        var insurance: Double = 2000.0
-        var year: Double = 30.0
+        let interestRate: Double = 5.0
+        let taxesAverage: Double = 4000.0
+        let insurance: Double = 2000.0
+        let year: Double = 30.0
         
-        //var manguito: LoanMango = LoanMango(interestRate: interestRate, taxesAverage: taxesAverage, monthlyIncome: monthlyIncome, monthlyDebt: monthlyDebt, downPayment: downPayment, year: year, insurance: insurance)
+        var modelController = ModelController(interestRate: interestRate, taxesAverage: taxesAverage, monthlyIncome: monthlyIncome, monthlyDebt: monthlyDebt, downPayment: downPayment, year: year, insurance: insurance)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
