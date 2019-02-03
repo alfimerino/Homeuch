@@ -73,12 +73,20 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     }
 }
 
-public var monthlyIncome = 0.0 // {
-//    didSet {
-//        print(monthlyIncome)
-//    }
-//}
+public var monthlyIncome = 0.0 {
+    didSet {
+        print(monthlyIncome)
+    }
+}
 
-public var monthlyDebt = 0.0
+public var monthlyDebt = 0.0 {
+    didSet {
+        print(monthlyDebt)
+    }
+}
 
-public var downPayment = 0.0
+public var downPayment = 0.0 {
+    didSet {
+        print(downPayment)
+    }
+}
