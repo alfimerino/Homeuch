@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="1913" y="-561"/>
         </scene>
-        <!--View Controller-->
+        <!--Page View Controller-->
         <scene sceneID="box-zi-RaA">
             <objects>
-                <viewController storyboardIdentifier="first" id="rDd-MU-1zi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" id="rDd-MU-1zi" customClass="PageViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VqD-2i-xaR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="2569.5652173913045" y="-561.68478260869574"/>
         </scene>
-        <!--View Controller-->
+        <!--Page View Controller-->
         <scene sceneID="qLY-VM-nXh">
             <objects>
-                <viewController storyboardIdentifier="second" id="f8S-2E-oTD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="f8S-2E-oTD" customClass="PageViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7YL-FG-2d2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="3232" y="-561"/>
         </scene>
-        <!--View Controller-->
+        <!--Page View Controller-->
         <scene sceneID="ZT6-Fk-WDT">
             <objects>
-                <viewController storyboardIdentifier="third" id="YOw-4w-9LC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="third" id="YOw-4w-9LC" customClass="PageViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zx-Zu-dGX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
