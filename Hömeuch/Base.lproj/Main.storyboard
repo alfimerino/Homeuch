@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="4139.130434782609" y="-561.68478260869574"/>
         </scene>
-        <!--Down Payment View Controller-->
+        <!--Monthly Debt View Controller-->
         <scene sceneID="ZT6-Fk-WDT">
             <objects>
-                <viewController storyboardIdentifier="third" id="YOw-4w-9LC" customClass="DownPaymentViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="third" id="YOw-4w-9LC" customClass="MonthlyDebtViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zx-Zu-dGX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,21 +196,25 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="f8S-2E-oTD" eventType="touchUpInside" id="1hR-G0-3Mv"/>
+                                    <action selector="buttonTapped:" destination="YOw-4w-9LC" eventType="touchUpInside" id="moh-Z1-HWw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="35i-Wj-rsZ"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="aNl-dC-UWj" id="enP-od-XuL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDw-NT-Zak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4868.115942028986" y="-562.5"/>
         </scene>
-        <!--Monthly Debt View Controller-->
+        <!--Down Payment View Controller-->
         <scene sceneID="KD6-Wm-lAR">
             <objects>
-                <viewController storyboardIdentifier="fourth" id="Q9A-W6-XPK" customClass="MonthlyDebtViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fourth" id="Q9A-W6-XPK" customClass="DownPaymentViewController" customModule="Matadoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAN-MS-3Nh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,6 +246,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTapped:" destination="Q9A-W6-XPK" eventType="touchUpInside" id="Tp7-vo-sjI"/>
                                     <action selector="buttonTapped:" destination="f8S-2E-oTD" eventType="touchUpInside" id="tqx-Bo-5k2"/>
                                 </connections>
                             </button>
@@ -267,6 +272,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IKQ-ip-zFK"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="Hsh-HC-swL" id="NNR-GQ-9cT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70M-Ds-0sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,15 +288,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6Y-nk-qba">
-                                <rect key="frame" x="56" y="109" width="245" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koB-ey-WKL">
+                                <rect key="frame" x="20" y="20" width="374" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="52"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Maintaining a reasonable monthly debt according to your earnings is critical to improve financial flexibility." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyO-Hh-86l">
+                                <rect key="frame" x="20" y="161" width="374" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aOD-Uy-Keu"/>
                     </view>
                 </viewController>

@@ -6,7 +6,7 @@ class ResultsViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         guard let val = Double(textField.text!) else { return }
-        monthlyIncome = val
+        result = val
     }
     
     override func viewDidLoad() {

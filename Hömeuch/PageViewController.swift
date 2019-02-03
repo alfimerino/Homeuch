@@ -34,6 +34,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         let year: Double = 30.0
         
         var modelController = ModelController(interestRate: interestRate, taxesAverage: taxesAverage, monthlyIncome: monthlyIncome, monthlyDebt: monthlyDebt, downPayment: downPayment, year: year, insurance: insurance)
+        
+        result = modelController.monthlyPayCalc()
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -90,3 +92,5 @@ public var downPayment = 0.0 {
         print(downPayment)
     }
 }
+
+public var result = 0.0

@@ -6,7 +6,7 @@ class DownPaymentViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         guard let val = Double(textField.text!) else { return }
-        monthlyIncome = val
+        downPayment = val
     }
     
     @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
